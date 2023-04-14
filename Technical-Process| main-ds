@@ -1,0 +1,49 @@
+^^^^^^^^^^^^^^^^^^^^Persiapan awal dan penting! 
+
+Pertama dan utama, siapkan environment
+  1. Buka terminal atau PowerShell.
+  2. cek python version. 
+```py
+python --version
+```
+Output: Python 3.9.13
+  3. membuat virtualenv
+  [ 
+ARTINYA: Perintah conda create --name main-ds python=Python 3.9.13 digunakan untuk membuat environment baru bernama "main-ds" dengan menggunakan Python versi Python 3.9.13
+
+Environment adalah cara untuk mengisolasi paket dan dependensi pada proyek tertentu sehingga proyek tersebut dapat berjalan dengan benar tanpa terpengaruh oleh versi paket yang berbeda pada proyek lain atau sistem operasi yang berbeda.
+
+Dalam perintah ini, conda adalah manajer paket yang digunakan untuk membuat environment baru, create adalah perintah untuk membuat environment baru, --name main-ds adalah opsi yang digunakan untuk memberi nama environment baru sebagai "main-ds", dan python=3.9 adalah opsi untuk menginstal versi Python 3.9 di dalam environment tersebut.
+] main-ds
+
+```py
+conda create --name project1 python=Python 3.9.13
+```
+Output: 
+  4. aktifkan project1 sebagai nama virtualenv
+```
+conda activate project1
+```
+  5. instal libraries yang ingin digunakan
+```
+pip install numpy pandas scipy matplotlib seaborn jupyter
+```
+  6. buka notebook
+```
+jupyter-notebook 
+```
+  7. Buat sebuah folder baru bernama ngariung_1. Folder tersebut akan menjadi directory utama dalam proyek ini. 
+  8. Buat sebuah berkas baru bernama offers_orders.ipynb. Pada berkas inilah, seluruh proses analisis data akan dikerjakan.
+  9. Buka berkas offers_orders.ipynb
+  10. Panggil semua librariesnya
+```py
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sn
+```
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^Gathering
+
+
+
